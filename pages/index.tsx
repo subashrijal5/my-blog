@@ -1,86 +1,134 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image"; 
+import FrontLayout from "../layouts/Front";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <FrontLayout>
       <Head>
-        <title>Create Next App</title>
+        <title>My Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className="flex-1 p-3 md:py-[35]">
+        <div className="space-y-2 md:space-y-6">
+          <div className="card card-side bg-base-200 shadow-xl">
+            <figure>
+              <img
+                src="https://api.lorem.space/image/movie?w=200&h=280"
+                alt="Movie"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Lorem ipsum dolor sit amet</h2>
+              <div className="justify-start">
+                <button className="btn btn-xs btn-primary">Movies</button>
+                <button className="btn btn-xs btn-secondary">Watched</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div className="card card-side bg-base-200 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title">
+                Fringilla est ullamcorper eget nulla facilisi etiam dignissim.
+              </h2>
+              <div className="justify-start">
+                <button className="btn btn-xs btn-accent">Article</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Rhoncus dolor purus non enim. Purus viverra accumsan in nisl.
+                Aliquam faucibus purus in massa. In vitae turpis massa sed
+                elementum tempus egestas. Nisl purus in mollis nunc sed.
+                Ullamcorper morbi tincidunt ornare massa eget. Enim nulla
+                aliquet porttitor lacus luctus accumsan. Id neque aliquam
+                vestibulum morbi blandit cursus. Pellentesque eu tincidunt
+                tortor aliquam nulla facilisi cras. Sed augue lacus viverra
+                vitae.
+              </p>
+            </div>
+          </div>
+          <div className="card card-side bg-base-200 shadow-xl">
+            <figure>
+              <img
+                src="https://api.lorem.space/image/book?w=200&h=280"
+                alt="Book"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Rhoncus dolor purus non enim.</h2>
+              <div className="justify-start">
+                <button className="btn btn-xs btn-error">Books</button>
+                <button className="btn btn-xs btn-success">Author</button>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Rhoncus dolor purus non enim.
+              </p>
+            </div>
+          </div>
+          <div className="card card-side bg-base-200 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title">
+                Elementum pulvinar etiam non quam lacus suspendisse
+              </h2>
+              <div className="justify-start">
+                <button className="btn btn-xs btn-warning">Note</button>
+              </div>
+              <p>
+                Sagittis id consectetur purus ut faucibus pulvinar elementum
+                integer. Massa sed elementum tempus egestas sed. Proin sagittis
+                nisl rhoncus mattis rhoncus urna. Amet volutpat consequat mauris
+                nunc congue nisi vitae suscipit tellus. Posuere urna nec
+                tincidunt praesent semper. Elementum pulvinar etiam non quam
+                lacus suspendisse.
+              </p>
+            </div>
+          </div>
+          <div className="card card-side bg-base-200 shadow-xl">
+            <figure>
+              <img
+                src="https://api.lorem.space/image/game?w=200&h=280"
+                alt="Game"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Sed augue lacus viverra vitae.</h2>
+              <div className="justify-start">
+                <button className="btn btn-xs btn-primary">Game</button>
+              </div>
+              <p>
+                Sodales ut etiam sit amet nisl purus in mollis nunc. Suspendisse
+                potenti nullam ac tortor vitae purus. Eu mi bibendum neque
+                egestas congue quisque egestas diam.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="btn-group">
+              <button className="btn">1</button>
+              <button className="btn">2</button>
+              <button className="btn btn-disabled">...</button>
+              <button className="btn">99</button>
+              <button className="btn">100</button>
+            </div>
+          </div>
         </div>
-      </main>
+        <div className="divider"></div>
+        <p className="text-xs pl-4">
+          <a className="link" href="https://github.com/subashrijal5">
+            Subash Rijal
+          </a>
+        </p>
+      </div>
+    </FrontLayout>
+  );
+};
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
-  )
-}
-
-export default Home
+export default Home;

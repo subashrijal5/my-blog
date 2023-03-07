@@ -6,9 +6,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/cannon": "^6.5.2",
+    "@react-three/drei": "^9.57.0",
+    "@react-three/fiber": "^8.11.5",
+    "@tailwindcss/typography": "^0.5.9",
+    "@tanstack/react-query": "^4.26.1",
+    "@trpc/client": "^10.14.0",
+    "@trpc/next": "^10.14.0",
+    "@trpc/react-query": "^10.14.0",
+    "@trpc/server": "^10.14.0",
+    "daisyui": "^2.51.2",
     "next": "latest",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.150.1",
+    "zod": "^3.21.2"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
