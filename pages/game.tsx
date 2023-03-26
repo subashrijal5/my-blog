@@ -18,6 +18,7 @@ const Game: NextPage = () => {
         </Suspense> 
       </Canvas>
       <TopSection />  */}
+        
     </div>
     </FrontLayout>
   );
